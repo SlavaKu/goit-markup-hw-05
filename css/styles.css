@@ -541,6 +541,11 @@ fill: #f4f4fd;
     flex-direction: column;
 }
 
+.footer-right-form {
+display: flex;
+gap: 24;
+}
+
 .footer-right-text {
 font-weight: 500;
 font-size: 16px;
@@ -549,14 +554,6 @@ letter-spacing: 0.02em;
 color: #ffffff;
 margin-bottom: 16px;
 }
-
-.footer-right-form-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
 
 .footer-right-icon-input {
     display: flex;  
@@ -629,10 +626,10 @@ pointer-events: auto;
   }
   
   .modal {
-position: relative;
+position: absolute;
 width: 408px;
 height: 80%;
-max-height: 584px;
+min-height: 584px;
 overflow: auto;
 padding: 72px 24px 24px 24px;
 top: 50%;
@@ -665,11 +662,13 @@ width: 24px;
 height: 24px;
 cursor: pointer;
 border: 1px solid #0000001a;
-border-radius: 100%;
+border-radius: 50%;
 background-color: #e7e9fc;
 stroke-width: 1px;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+border: none;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+border 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+}
 
   .modal-close-icons {
 display: flex;
@@ -718,6 +717,7 @@ margin-bottom: 4px;
 font-size: 12px;
 letter-spacing: 0.04em;
 color: #8e8f99;
+line-height: 1.17; 
 }
 
 .model-form-input {
@@ -730,11 +730,13 @@ background-color: transparent;
 font-size: 12px;
 letter-spacing: 0.04em;
 color: #2e2f42;
+outline: transparent;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-form-field-wrapper {
-margin-bottom: 8px;
+margin-bottom: 16px;
+
 }
 
 
@@ -769,11 +771,13 @@ border-radius: 4px;
 width: 100%;
 height: 120px;
 background-color: transparent;
+outline: transparent;
 padding: 8px 16px;
 resize: none;
 font-size: 12px;
 letter-spacing: 0.04em;
-color: #2e2f42;
+color: rgba(46, 47, 66, 0.4);
+line-height: 1.17;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -786,11 +790,18 @@ outline: none;
 border-color: #4d5ae5;
 }
 
+.model-form-checkbox-wrapper {
+    margin-bottom: 24px;
+}
+
 .model-form-checkbox-label {
 font-size: 12px;
-line-height: 1.7;
 letter-spacing: 0.04em;
 color: #8e8f99;
+line-height: 1.17;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+ fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .model-form-policy-link {
@@ -805,6 +816,7 @@ text-decoration-skip-ink: none;
 background-color: #404bbf;
 border-color: #404bbf;
 fill: #f4f4fd;
+border: none; 
 }
 
 .model-form-checkbox:focus 
@@ -838,7 +850,7 @@ overflow: hidden;
 display: block;
 border-radius: 4px;
 padding: 16px 32px;
-width: 169px;
+
 height: 56px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 background: #4d5ae5;
@@ -851,6 +863,7 @@ color: #fff;
 cursor: pointer;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 margin: 0 auto;
+min-width: 169px 
 }
 
 .model-form-submit-btn:hover,
