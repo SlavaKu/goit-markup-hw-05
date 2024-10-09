@@ -630,6 +630,7 @@ position: absolute;
 width: 408px;
 height: 80%;
 min-height: 584px;
+max-height: ;
 overflow: auto;
 padding: 72px 24px 24px 24px;
 top: 50%;
@@ -802,6 +803,7 @@ line-height: 1.17;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
 border 250ms cubic-bezier(0.4, 0, 0.2, 1),
  fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+margin-bottom: 24px;
 }
 
 .model-form-policy-link {
@@ -836,7 +838,6 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 cursor: pointer;
 fill: transparent;
 margin-right: 8px;
-margin-bottom: 24px;
 }
 
 .model-form-checkbpx-ikon {
