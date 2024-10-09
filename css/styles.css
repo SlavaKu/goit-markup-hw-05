@@ -740,13 +740,13 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-form-field-wrapper {
-margin-bottom: 16px;
+margin-bottom: 8px;
 }
 
 
 .model-form-input-wrapper {
     position: relative;
-    margin-bottom: 16px
+    margin-bottom: 4px
 }
 
 .model-form-input-icon {
