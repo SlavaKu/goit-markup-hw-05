@@ -770,6 +770,15 @@ outline: none;
 fill: #4d5ae5;
 }
 
+.model-form-field-wrapper-comment {
+    margin-bottom: 16px;
+}
+
+.model-form-field-label {
+margin-bottom: 4px;
+
+}
+
 .model-form-comment {
 border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
